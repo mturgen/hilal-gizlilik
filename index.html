@@ -24,12 +24,10 @@
   h2:first-of-type { border-top: 0; padding-top: 0; }
   .meta { color: var(--muted); font-size: .95rem; margin-bottom: 1.6rem; }
   .ozet { background: var(--panel); border-left: 4px solid var(--accent); padding: 1rem 1.15rem; border-radius: 6px; margin: 1.5rem 0 0; }
-  table { width: 100%; border-collapse: collapse; margin: .8rem 0; font-size: .95rem; display: block; overflow-x: auto; }
-  th, td { text-align: left; padding: .55rem .6rem; border-bottom: 1px solid var(--line); vertical-align: top; }
-  th { font-weight: 600; white-space: nowrap; }
   code { background: var(--panel); padding: .1rem .35rem; border-radius: 4px; font-size: .9em; }
   ul { padding-left: 1.2rem; }
   li { margin: .3rem 0; }
+  a { color: var(--accent); }
   footer { margin-top: 3rem; padding-top: 1.2rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; }
 </style>
 </head>
@@ -38,110 +36,105 @@
 
 <h1>Hilal — Gizlilik Politikası</h1>
 <p class="meta">
-  Yürürlük tarihi: 14/08/2026 &middot;
-  Sürüm 1.0 &middot; Uygulama: Hilal — Dur ve Doğrula (<code>tr.hilal.dur</code>)
+  Yürürlük tarihi: 14 Ağustos 2026<br>
+  Uygulama: Hilal — Dur ve Doğrula
 </p>
 
+<p>Hilal, dolandırıcılık girişimlerine karşı kullanıcıyı uyarmaya yardımcı olmak amacıyla geliştirilmiş bir Android uygulamasıdır.</p>
+
 <div class="ozet">
-  <strong>Kısa özet.</strong> Hilal telefonunuzda çalışır ve <strong>internete bağlanmaz</strong>.
-  Cevaplarınız, kayıtlarınız ve risk sonucunuz telefonunuzdan çıkmaz. Bunu isteseydik bile
-  yapamazdık: uygulama internet iznini hiç istemez, dolayısıyla işletim sistemi bağlantı
-  açmasına izin vermez.
+  Uygulama internete bağlanmaz. İncelediği bilgiler, verdiğiniz cevaplar ve oluşturulan risk değerlendirmeleri cihazınızda kalır; geliştiriciye veya üçüncü kişilere gönderilmez.
 </div>
 
-<h2>1. Bu belge neden var</h2>
-<p>Google Play, rehber ve bildirim gibi hassas izinler isteyen her uygulamadan herkese açık bir
-gizlilik politikası ister. Bu belge o yükümlülüğü karşılar ve size uygulamanın telefonunuzda
-ne yaptığını anlatır.</p>
-<p><strong>Bizde size ait bir kayıt bulunmuyor.</strong> Uygulamanın internet izni olmadığı için
-verileriniz bize hiç ulaşmıyor: sunucumuz, hesabınız, kaydınız yok. Aşağıda anlatılan her şey
-<strong>sizin telefonunuzda</strong> olup biter.</p>
-<p>Yayınlayan: İlker TÜRGEN &middot; İletişim: turgengamestudio@gmail.com</p>
+<p>Geliştirici ve yayınlayan: İlker TÜRGEN</p>
+<p>İletişim: <a href="mailto:turgengamestudio@gmail.com">turgengamestudio@gmail.com</a></p>
 
-<h2>2. Uygulama internete bağlanmaz</h2>
-<p>Hilal'in Android izin listesinde <code>INTERNET</code> yoktur. Bu bir vaat değil, teknik bir
-sınırdır: izin olmadan uygulama ağ bağlantısı açamaz.</p>
+<h2>1. İnternet bağlantısı ve veri aktarımı</h2>
+<p>Hilal'in Android uygulama izinleri arasında <code>INTERNET</code> izni bulunmaz.</p>
+<p>Bu nedenle uygulama:</p>
 <ul>
-  <li>Sunucumuz yok; hesabınız yok; giriş yapmıyorsunuz.</li>
-  <li>Analitik, reklam, çökme raporlama ya da üçüncü taraf yazılım bileşeni yok.</li>
-  <li>Verileriniz <strong>hiçbir yere aktarılmaz</strong> — bize de, üçüncü kişilere de, yurt dışına da.</li>
+  <li>bir sunucuya veri göndermez,</li>
+  <li>kullanıcı hesabı oluşturmaz,</li>
+  <li>reklam veya analitik hizmeti kullanmaz,</li>
+  <li>kullanım verilerini geliştiriciye iletmez,</li>
+  <li>kişisel verileri üçüncü kişilerle paylaşmaz.</li>
 </ul>
+<p>Uygulamanın yaptığı değerlendirmeler cihaz üzerinde gerçekleşir.</p>
 
-<h2>3. Telefonunuzda ne işleniyor</h2>
-<p>Uygulama şunları <strong>telefonunuzda, anlık olarak</strong> işler ve kural gereği saklamaz.
-Bu işleme telefonun içinde başlar ve biter; hiçbir aşamasında bize ulaşmaz.</p>
-<table>
-  <tr><th>Ne</th><th>Ne için</th><th>Saklanıyor mu</th></tr>
-  <tr><td>Çağrı durumu ve numara</td><td>Bilinmeyen numara riski</td><td>Numara şifreli; içerik değil</td></tr>
-  <tr><td>Rehber eşleşmesi</td><td>Arayan tanıdık mı</td><td>Ad değil, geri döndürülemez etiket</td></tr>
-  <tr><td>Bildirim metni</td><td>Risk kalıbı tanıma</td><td><strong>Hayır</strong> — okunur, saklanmaz</td></tr>
-  <tr><td>Öne gelen uygulamanın <em>kategorisi</em></td><td>Bankacılık / uzaktan erişim adımı</td><td>Uygulama adı değil, kategori</td></tr>
-  <tr><td>Sorulara verdiğiniz cevaplar</td><td>Risk değerlendirmesi</td><td>Yalnız sonuç özeti, şifreli</td></tr>
-</table>
-<p>Görüşmeleriniz <strong>dinlenmez ve kaydedilmez</strong>. Ekranınız görüntülenmez.
-Mesajlarınızın içeriği saklanmaz.</p>
-
-<h2>4. Telefonunuzda ne saklanıyor</h2>
-<p>Uygulama az sayıda kaydı <strong>telefonunuzda</strong> tutar — dürüst olmak gerekirse
-"hiçbir şey saklanmıyor" demek doğru olmazdı. Saklananların tamamı cihazınızda kalır ve
-silme kontrolü sizdedir.</p>
-<p>Saklanan az sayıdaki kayıt <strong>AES-256-GCM</strong> ile şifrelenir; şifreleme anahtarı
-Android Keystore içinde tutulur ve uygulama dışına çıkarılamaz.</p>
-<table>
-  <tr><th>Kayıt</th><th>Varsayılan süre</th><th>Sizin kontrolünüz</th></tr>
-  <tr><td>Vaka özeti (yalnız sonuç)</td><td>7 gün</td><td>Kapatılabilir; süre değiştirilebilir</td></tr>
-  <tr><td>Koruma oturumu durumu</td><td>Oturum bitince silinir</td><td>—</td></tr>
-  <tr><td>Numara etiketleri</td><td>Sınırlı zaman penceresi</td><td>Silinebilir</td></tr>
-</table>
-<p>Cihaz yedeklemesi kapalıdır; bu kayıtlar bulut yedeğine çıkmaz.</p>
-
-<h2>5. İzinler ve neden istendiği</h2>
-<p>Temel değerlendirme <strong>hiçbir özel izin olmadan</strong> çalışır. Aşağıdakilerin her
-biri isteğe bağlıdır, ayrı ayrı açılıp kapatılır ve istediğiniz an geri alınır.</p>
-<table>
-  <tr><th>İzin</th><th>Neden</th><th>Vermezseniz</th></tr>
-  <tr><td>Telefon durumu</td><td>Bilinmeyen numarayı tanımak</td><td>Arama koruması çalışmaz</td></tr>
-  <tr><td>Rehber</td><td>Arayan tanıdık mı</td><td>Tanıdık ayrımı yapılamaz</td></tr>
-  <tr><td>Bildirim erişimi</td><td>Bildirimlerdeki risk kalıpları</td><td>Mesaj halkası kapalı kalır</td></tr>
-  <tr><td>Kullanım erişimi</td><td>Öne gelen uygulamanın kategorisi</td><td>Aktif Koruma adımları göremez</td></tr>
-  <tr><td>Bildirim gönderme</td><td>Size uyarı göstermek</td><td>Uyarılar görünmez</td></tr>
-  <tr><td>Diğer uygulamaların üzerinde</td><td>Görüşme sırasında uyarı kartı</td><td>Kart gösterilmez</td></tr>
-</table>
-<p><strong>Bildirim erişimi hakkında.</strong> Android bu izni en geniş hâliyle anlatır ve metni
-her uygulamada aynıdır. Hilal bu erişimi yalnız risk kalıbı tanımak için kullanır; içerik
-saklanmaz ve hiçbir yere gönderilmez.</p>
-
-<h2>6. Aktif Koruma</h2>
-<p>Şüpheli bir görüşmenin ardından <strong>siz açarsanız</strong> 15, 30 veya 60 dakikalık
-sınırlı bir süre çalışır. Açık olduğu sürece kalıcı bir bildirim görünür ve tek dokunuşla
-durdurabilirsiniz. Süre dolduğunda kendiliğinden biter. Konum kullanılmaz, ses kaydedilmez,
-ekran görüntülenmez.</p>
-
-<h2>7. Haklarınız</h2>
-<p>Verileriniz cihazınızdan çıkmadığı için hepsi doğrudan sizin elinizdedir:</p>
+<h2>2. Uygulamanın cihazda kullandığı bilgiler</h2>
+<p>Hilal'in bazı özellikleri çalışırken aşağıdaki bilgiler cihaz üzerinde işlenebilir:</p>
 <ul>
-  <li><strong>Silme:</strong> Ayarlar → tüm yerel veriyi sil. Uygulamayı kaldırmak da her şeyi siler.</li>
-  <li><strong>Sınırlama:</strong> Vaka geçmişini kapatabilir ya da saklama süresini kısaltabilirsiniz.</li>
-  <li><strong>Geri alma:</strong> Verdiğiniz her izni Android ayarlarından geri alabilirsiniz.</li>
+  <li>Gelen aramanın durumu ve telefon numarası,</li>
+  <li>Arayan numaranın rehberinizde bulunup bulunmadığı,</li>
+  <li>İzin vermeniz hâlinde bildirimlerde yer alan metinler,</li>
+  <li>Aktif Koruma sırasında öne gelen uygulamanın risk değerlendirmesi için gerekli kategorisi,</li>
+  <li>Risk değerlendirmesi sırasında verdiğiniz cevaplar.</li>
 </ul>
-<p>Bu haklar için bize başvurmanız gerekmez, çünkü bizde saklanan bir kaydınız yok; hepsi
-uygulamanın içindeki düğmelerle çalışır. Yine de sormak istediğiniz bir şey olursa:
-turgengamestudio@gmail.com</p>
+<p>Bildirim metinleri analiz edildikten sonra saklanmaz.</p>
+<p>Hilal telefon görüşmelerinin sesini dinlemez veya kaydetmez. Ekran görüntüsü almaz.</p>
 
-<h2>8. Çocuklar</h2>
-<p>Hilal 18 yaş altı kullanıcılara yönelik değildir ve çocuklardan bilerek veri işlemez.</p>
+<h2>3. Cihazda saklanan bilgiler</h2>
+<p>Bazı özelliklerin çalışabilmesi için sınırlı miktarda bilgi cihazınızda tutulabilir. Bunlar arasında:</p>
+<ul>
+  <li>yakın tarihli değerlendirme sonuçları,</li>
+  <li>Aktif Koruma oturumunun durumu,</li>
+  <li>arama değerlendirmesinde kullanılan sınırlı numara kayıtları</li>
+</ul>
+<p>bulunabilir.</p>
+<p>Saklanan kullanıcı verileri cihaz üzerinde şifrelenir. Şifreleme anahtarları Android'in güvenli anahtar altyapısında tutulur.</p>
+<p>Vaka geçmişi uygulama ayarlarından kapatılabilir veya silinebilir. Uygulamanın kaldırılması da uygulamaya ait yerel verileri siler.</p>
+<p>Hilal için Android bulut yedeklemesi kapalıdır.</p>
 
-<h2>9. Uygulamanın sınırları</h2>
-<p>Hilal bir <strong>uyarı ve karar destek</strong> aracıdır. Arayanın kimliğini doğrulamaz,
-para transferini engellemez, bir işlemin dolandırıcılık olduğunu kesin olarak tespit ettiğini
-iddia etmez. Size gördüğü işaretleri ve gerekçesini gösterir; kararı siz verirsiniz.</p>
+<h2>4. İzinler</h2>
+<p>Hilal'in temel değerlendirme bölümü özel izin vermeden de kullanılabilir. Ek koruma özellikleri için Android tarafından bazı izinler istenebilir.</p>
+<p><strong>Telefon durumu:</strong> Gelen aramalar sırasında koruma özelliklerinin çalışmasını sağlar.</p>
+<p><strong>Rehber:</strong> Arayan kişinin rehberinizde kayıtlı olup olmadığını belirlemek için kullanılır.</p>
+<p><strong>Bildirim erişimi:</strong> İzin verilirse bildirimlerde dolandırıcılık riski oluşturabilecek işaretlerin cihaz üzerinde değerlendirilmesini sağlar. Bildirim içeriği saklanmaz veya gönderilmez.</p>
+<p><strong>Kullanım erişimi:</strong> Aktif Koruma sırasında riskli olabilecek uygulama geçişlerinin değerlendirilmesini sağlar.</p>
+<p><strong>Bildirim izni:</strong> Hilal'in size uyarı ve koruma bildirimleri gösterebilmesi için kullanılır.</p>
+<p><strong>Diğer uygulamaların üzerinde gösterme:</strong> Görüşme sırasında gerekli olduğunda uyarı kartının görüntülenmesini sağlar.</p>
+<p>Bu izinlerin tamamı Android ayarlarından daha sonra geri alınabilir.</p>
 
-<h2>10. Değişiklikler</h2>
-<p>Bu politika değişirse yürürlük tarihi güncellenir ve önemli değişiklikler uygulama içinde
-duyurulur. Geçmiş sürümler aynı adreste erişilebilir kalır.</p>
+<h2>5. Aktif Koruma</h2>
+<p>Aktif Koruma kullanıcı tarafından başlatılır ve seçilen süre boyunca çalışır.</p>
+<p>Bu özellik açıkken Hilal, dolandırıcılık girişimlerinde sık görülen bazı riskli adımları cihaz üzerinde değerlendirebilir ve gerektiğinde kullanıcıyı uyarabilir.</p>
+<p>Aktif Koruma sırasında:</p>
+<ul>
+  <li>konum takip edilmez,</li>
+  <li>görüşme sesi kaydedilmez,</li>
+  <li>ekran görüntüsü alınmaz,</li>
+  <li>bilgiler internet üzerinden gönderilmez.</li>
+</ul>
+<p>Koruma süresi sona erdiğinde özellik otomatik olarak kapanır. Kullanıcı istediği zaman daha erken de durdurabilir.</p>
+
+<h2>6. Verilerin silinmesi ve izinlerin geri alınması</h2>
+<p>Hilal'de tutulan yerel bilgiler uygulama içerisindeki ilgili ayarlardan silinebilir.</p>
+<p>Verilmiş izinler ise Android'in uygulama ayarlarından herhangi bir zamanda geri alınabilir.</p>
+<p>Hilal kullanıcı verilerini geliştiriciye göndermediği ve uzaktaki bir sunucuda kullanıcı hesabı tutmadığı için geliştiricinin elinde ayrıca silinmesini talep edebileceğiniz bir kullanıcı profili veya hesap kaydı bulunmaz.</p>
+<p>Gizlilikle ilgili sorularınız için:<br>
+<a href="mailto:turgengamestudio@gmail.com">turgengamestudio@gmail.com</a></p>
+
+<h2>7. Çocuklar</h2>
+<p>Hilal özellikle çocuklara yönelik olarak tasarlanmamıştır.</p>
+<p>Uygulama kullanıcı hesabı oluşturmadığı ve geliştiriciye kişisel veri göndermediği için çocuklara ilişkin ayrı bir kullanıcı veritabanı da tutulmaz.</p>
+
+<h2>8. Hilal'in sınırları</h2>
+<p>Hilal bir uyarı ve karar destek aracıdır.</p>
+<p>Uygulama:</p>
+<ul>
+  <li>arayan kişinin kimliğini kesin olarak doğrulamaz,</li>
+  <li>bir işlemin dolandırıcılık olduğunu kesin olarak belirlediğini iddia etmez,</li>
+  <li>banka veya başka bir kurum adına işlem yapmaz,</li>
+  <li>para transferini teknik olarak engellemez.</li>
+</ul>
+<p>Hilal, tespit ettiği risk işaretlerini kullanıcıya göstererek daha dikkatli karar verilmesine yardımcı olmayı amaçlar.</p>
+
+<h2>9. Gizlilik politikasındaki değişiklikler</h2>
+<p>Uygulamanın çalışma biçiminde veya gizlilik uygulamalarında önemli bir değişiklik yapılması hâlinde bu politika da güncellenir.</p>
+<p>Güncel sürümde değişiklik tarihi bu sayfanın üst bölümünde gösterilir.</p>
 
 <footer>
-  Hilal — Dur ve Doğrula &middot; <code>tr.hilal.dur</code>
+  Hilal — Dur ve Doğrula
 </footer>
 
 </main>
