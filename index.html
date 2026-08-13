@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hilal — Gizlilik Politikası</title>
+<style>
+  :root {
+    --ink: #14181f; --muted: #5a6472; --line: #e2e6ec;
+    --bg: #ffffff; --panel: #f6f8fb; --accent: #14306b;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink:#e9edf4; --muted:#a4aebd; --line:#2a313c; --bg:#11141a; --panel:#171c24; --accent:#8fb4ff; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 17px/1.65 -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 4rem; }
+  h1 { font-size: 1.85rem; line-height: 1.25; margin: 0 0 .35rem; }
+  h2 { font-size: 1.2rem; margin: 2.4rem 0 .6rem; padding-top: 1.2rem; border-top: 1px solid var(--line); }
+  h2:first-of-type { border-top: 0; padding-top: 0; }
+  .meta { color: var(--muted); font-size: .95rem; margin-bottom: 1.6rem; }
+  .ozet { background: var(--panel); border-left: 4px solid var(--accent); padding: 1rem 1.15rem; border-radius: 6px; margin: 1.5rem 0 0; }
+  table { width: 100%; border-collapse: collapse; margin: .8rem 0; font-size: .95rem; display: block; overflow-x: auto; }
+  th, td { text-align: left; padding: .55rem .6rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { font-weight: 600; white-space: nowrap; }
+  code { background: var(--panel); padding: .1rem .35rem; border-radius: 4px; font-size: .9em; }
+  ul { padding-left: 1.2rem; }
+  li { margin: .3rem 0; }
+  footer { margin-top: 3rem; padding-top: 1.2rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; }
+</style>
+</head>
+<body>
+<main>
+
+<h1>Hilal — Gizlilik Politikası</h1>
+<p class="meta">
+  Yürürlük tarihi: 14/08/2026 &middot;
+  Sürüm 1.0 &middot; Uygulama: Hilal — Dur ve Doğrula (<code>tr.hilal.dur</code>)
+</p>
+
+<div class="ozet">
+  <strong>Kısa özet.</strong> Hilal telefonunuzda çalışır ve <strong>internete bağlanmaz</strong>.
+  Cevaplarınız, kayıtlarınız ve risk sonucunuz telefonunuzdan çıkmaz. Bunu isteseydik bile
+  yapamazdık: uygulama internet iznini hiç istemez, dolayısıyla işletim sistemi bağlantı
+  açmasına izin vermez.
+</div>
+
+<h2>1. Bu belge neden var</h2>
+<p>Google Play, rehber ve bildirim gibi hassas izinler isteyen her uygulamadan herkese açık bir
+gizlilik politikası ister. Bu belge o yükümlülüğü karşılar ve size uygulamanın telefonunuzda
+ne yaptığını anlatır.</p>
+<p><strong>Bizde size ait bir kayıt bulunmuyor.</strong> Uygulamanın internet izni olmadığı için
+verileriniz bize hiç ulaşmıyor: sunucumuz, hesabınız, kaydınız yok. Aşağıda anlatılan her şey
+<strong>sizin telefonunuzda</strong> olup biter.</p>
+<p>Yayınlayan: İlker TÜRGEN &middot; İletişim: turgengamestudio@gmail.com</p>
+
+<h2>2. Uygulama internete bağlanmaz</h2>
+<p>Hilal'in Android izin listesinde <code>INTERNET</code> yoktur. Bu bir vaat değil, teknik bir
+sınırdır: izin olmadan uygulama ağ bağlantısı açamaz.</p>
+<ul>
+  <li>Sunucumuz yok; hesabınız yok; giriş yapmıyorsunuz.</li>
+  <li>Analitik, reklam, çökme raporlama ya da üçüncü taraf yazılım bileşeni yok.</li>
+  <li>Verileriniz <strong>hiçbir yere aktarılmaz</strong> — bize de, üçüncü kişilere de, yurt dışına da.</li>
+</ul>
+
+<h2>3. Telefonunuzda ne işleniyor</h2>
+<p>Uygulama şunları <strong>telefonunuzda, anlık olarak</strong> işler ve kural gereği saklamaz.
+Bu işleme telefonun içinde başlar ve biter; hiçbir aşamasında bize ulaşmaz.</p>
+<table>
+  <tr><th>Ne</th><th>Ne için</th><th>Saklanıyor mu</th></tr>
+  <tr><td>Çağrı durumu ve numara</td><td>Bilinmeyen numara riski</td><td>Numara şifreli; içerik değil</td></tr>
+  <tr><td>Rehber eşleşmesi</td><td>Arayan tanıdık mı</td><td>Ad değil, geri döndürülemez etiket</td></tr>
+  <tr><td>Bildirim metni</td><td>Risk kalıbı tanıma</td><td><strong>Hayır</strong> — okunur, saklanmaz</td></tr>
+  <tr><td>Öne gelen uygulamanın <em>kategorisi</em></td><td>Bankacılık / uzaktan erişim adımı</td><td>Uygulama adı değil, kategori</td></tr>
+  <tr><td>Sorulara verdiğiniz cevaplar</td><td>Risk değerlendirmesi</td><td>Yalnız sonuç özeti, şifreli</td></tr>
+</table>
+<p>Görüşmeleriniz <strong>dinlenmez ve kaydedilmez</strong>. Ekranınız görüntülenmez.
+Mesajlarınızın içeriği saklanmaz.</p>
+
+<h2>4. Telefonunuzda ne saklanıyor</h2>
+<p>Uygulama az sayıda kaydı <strong>telefonunuzda</strong> tutar — dürüst olmak gerekirse
+"hiçbir şey saklanmıyor" demek doğru olmazdı. Saklananların tamamı cihazınızda kalır ve
+silme kontrolü sizdedir.</p>
+<p>Saklanan az sayıdaki kayıt <strong>AES-256-GCM</strong> ile şifrelenir; şifreleme anahtarı
+Android Keystore içinde tutulur ve uygulama dışına çıkarılamaz.</p>
+<table>
+  <tr><th>Kayıt</th><th>Varsayılan süre</th><th>Sizin kontrolünüz</th></tr>
+  <tr><td>Vaka özeti (yalnız sonuç)</td><td>7 gün</td><td>Kapatılabilir; süre değiştirilebilir</td></tr>
+  <tr><td>Koruma oturumu durumu</td><td>Oturum bitince silinir</td><td>—</td></tr>
+  <tr><td>Numara etiketleri</td><td>Sınırlı zaman penceresi</td><td>Silinebilir</td></tr>
+</table>
+<p>Cihaz yedeklemesi kapalıdır; bu kayıtlar bulut yedeğine çıkmaz.</p>
+
+<h2>5. İzinler ve neden istendiği</h2>
+<p>Temel değerlendirme <strong>hiçbir özel izin olmadan</strong> çalışır. Aşağıdakilerin her
+biri isteğe bağlıdır, ayrı ayrı açılıp kapatılır ve istediğiniz an geri alınır.</p>
+<table>
+  <tr><th>İzin</th><th>Neden</th><th>Vermezseniz</th></tr>
+  <tr><td>Telefon durumu</td><td>Bilinmeyen numarayı tanımak</td><td>Arama koruması çalışmaz</td></tr>
+  <tr><td>Rehber</td><td>Arayan tanıdık mı</td><td>Tanıdık ayrımı yapılamaz</td></tr>
+  <tr><td>Bildirim erişimi</td><td>Bildirimlerdeki risk kalıpları</td><td>Mesaj halkası kapalı kalır</td></tr>
+  <tr><td>Kullanım erişimi</td><td>Öne gelen uygulamanın kategorisi</td><td>Aktif Koruma adımları göremez</td></tr>
+  <tr><td>Bildirim gönderme</td><td>Size uyarı göstermek</td><td>Uyarılar görünmez</td></tr>
+  <tr><td>Diğer uygulamaların üzerinde</td><td>Görüşme sırasında uyarı kartı</td><td>Kart gösterilmez</td></tr>
+</table>
+<p><strong>Bildirim erişimi hakkında.</strong> Android bu izni en geniş hâliyle anlatır ve metni
+her uygulamada aynıdır. Hilal bu erişimi yalnız risk kalıbı tanımak için kullanır; içerik
+saklanmaz ve hiçbir yere gönderilmez.</p>
+
+<h2>6. Aktif Koruma</h2>
+<p>Şüpheli bir görüşmenin ardından <strong>siz açarsanız</strong> 15, 30 veya 60 dakikalık
+sınırlı bir süre çalışır. Açık olduğu sürece kalıcı bir bildirim görünür ve tek dokunuşla
+durdurabilirsiniz. Süre dolduğunda kendiliğinden biter. Konum kullanılmaz, ses kaydedilmez,
+ekran görüntülenmez.</p>
+
+<h2>7. Haklarınız</h2>
+<p>Verileriniz cihazınızdan çıkmadığı için hepsi doğrudan sizin elinizdedir:</p>
+<ul>
+  <li><strong>Silme:</strong> Ayarlar → tüm yerel veriyi sil. Uygulamayı kaldırmak da her şeyi siler.</li>
+  <li><strong>Sınırlama:</strong> Vaka geçmişini kapatabilir ya da saklama süresini kısaltabilirsiniz.</li>
+  <li><strong>Geri alma:</strong> Verdiğiniz her izni Android ayarlarından geri alabilirsiniz.</li>
+</ul>
+<p>Bu haklar için bize başvurmanız gerekmez, çünkü bizde saklanan bir kaydınız yok; hepsi
+uygulamanın içindeki düğmelerle çalışır. Yine de sormak istediğiniz bir şey olursa:
+turgengamestudio@gmail.com</p>
+
+<h2>8. Çocuklar</h2>
+<p>Hilal 18 yaş altı kullanıcılara yönelik değildir ve çocuklardan bilerek veri işlemez.</p>
+
+<h2>9. Uygulamanın sınırları</h2>
+<p>Hilal bir <strong>uyarı ve karar destek</strong> aracıdır. Arayanın kimliğini doğrulamaz,
+para transferini engellemez, bir işlemin dolandırıcılık olduğunu kesin olarak tespit ettiğini
+iddia etmez. Size gördüğü işaretleri ve gerekçesini gösterir; kararı siz verirsiniz.</p>
+
+<h2>10. Değişiklikler</h2>
+<p>Bu politika değişirse yürürlük tarihi güncellenir ve önemli değişiklikler uygulama içinde
+duyurulur. Geçmiş sürümler aynı adreste erişilebilir kalır.</p>
+
+<footer>
+  Hilal — Dur ve Doğrula &middot; <code>tr.hilal.dur</code>
+</footer>
+
+</main>
+</body>
+</html>
